@@ -26,4 +26,9 @@ __pycache__/
 /.cursor/
 /.bares/
 /repos/
+/pj-domina-rf-git-setup/
+/rvim/
+/pj-domina-rf-git-setup-arch/
+/pj-domina-rf-git-setup.nvim/
+/octohub.nvim/
 # <<< git-setup.nvim: repos (generado) <<<
