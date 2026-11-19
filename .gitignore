@@ -19,7 +19,7 @@ scratch-*.md
 *~
 __pycache__/
 
-# >>> git-setup.nvim: repos (generado) >>>
+# >>> HR-GIT-SETUP: repos (generado) >>>
 /.pj-sync/
 /.pj/
 /.agents/
@@ -31,4 +31,4 @@ __pycache__/
 /pj-domina-rf-git-setup-arch/
 /pj-domina-rf-git-setup.nvim/
 /octohub.nvim/
-# <<< git-setup.nvim: repos (generado) <<<
+# <<< HR-GIT-SETUP: repos (generado) <<<

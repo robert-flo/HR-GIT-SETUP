@@ -1,6 +1,6 @@
 # Datos del proyecto. Es el único archivo de datos que llenás a mano; después: ./pj
 # Lo valida schema/proyecto.schema.json de pj-template. Los textos van entre comillas (un # sin comillas corta el valor).
-proyecto: "git-setup.nvim"     # nombre del trío: PM-git-setup.nvim, WK-git-setup.nvim, RV-git-setup.nvim
+proyecto: "HR-GIT-SETUP"       # nombre del trío: PM-HR-GIT-SETUP, WK-HR-GIT-SETUP, RV-HR-GIT-SETUP
 area: "plugin de Neovim compañero de git-setup: mini terminal flotante con git pull y notificación"
 rama_base: "main"              # rama de los PR finales
 template_ref: "858d8bec7768edbf842575e2729a3f62a615cda7"   # SHA de robert-flo/pj-template; lo sube el PR de sync
@@ -29,7 +29,7 @@ repos:
 # Specs en curso: ref = dueño/repo#N, orden entero, exactamente uno con primero: true.
 specs: []
 notas: |
-  Meta-repo del proyecto git-setup.nvim. El código del plugin vive en
+  Meta-repo HR-GIT-SETUP del proyecto git-setup.nvim. El código del plugin vive en
   pj-domina-rf-git-setup.nvim; la mini terminal lanza el comando git-pull de la CLI git-setup
   (pj-domina-rf-git-setup), cuyo empaquetado Arch vive en pj-domina-rf-git-setup-arch. rvim es
   la configuración de Neovim de Roberto. 2KAbhishek/octohub.nvim es una referencia externa de
