@@ -1,6 +1,6 @@
 # AGENTS.md — git-setup.nvim
 
-Plugin de Neovim y meta-repo del trío PM/WK/RV de **git-setup.nvim** para Cursor y agy. Si sos un agente: si no existe `.agents/reglas/`, corré `./pj` antes de nada.
+Meta-repo del trío PM/WK/RV de **git-setup.nvim** para Cursor y agy (el código del plugin vive en `pj-domina-rf-git-setup.nvim`). Si sos un agente: si no existe `.agents/reglas/`, corré `./pj` antes de nada.
 
 ## Qué hay acá
 - `proyecto.yml`: los datos del proyecto (repos, specs en orden, notas). Lo llenás vos.
@@ -8,4 +8,9 @@ Plugin de Neovim y meta-repo del trío PM/WK/RV de **git-setup.nvim** para Curso
 - Todo lo demás (reglas, plantillas, skills, scripts) lo trae `./pj` desde `robert-flo/pj-template` al SHA de `template_ref`, en `.pj/`, y genera `.agents/` y `.cursor/`. Nada de eso se versiona ni se edita a mano.
 
 ## Arquitectura
-Proyecto de un solo repo: el código del plugin vive acá. La idea: una ventana flotante (`nvim_open_win`) con un buffer de terminal (`termopen`) que corre el comando de la CLI git-setup (el git-pull de pj-domina-rf-git-setup), y una notificación con el resultado según el código de salida (verde si salió bien, roja si no, dejando la ventana abierta para leer el error). El empaquetado Arch de la CLI vive en pj-domina-rf-git-setup-arch, fuera de este trío.
+Proyecto multi-repo compuesto por 5 repositorios:
+- `pj-domina-rf-git-setup.nvim`: código del plugin de Neovim (ventana flotante `nvim_open_win` con buffer de terminal `termopen` que corre el `git-pull` de la CLI `git-setup` y muestra una notificación según el código de salida: verde si salió bien, roja si no, dejando la ventana abierta para leer el error).
+- `pj-domina-rf-git-setup`: CLI `git-setup`.
+- `pj-domina-rf-git-setup-arch`: empaquetado Arch de la CLI `git-setup`.
+- `rvim`: configuración de Neovim de Roberto donde se integra y prueba el plugin.
+- `2KAbhishek/octohub.nvim`: referencia externa de solo lectura para patrones y estructura de plugins de Neovim (sin push a upstream ni PRs).
