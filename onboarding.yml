@@ -2,12 +2,21 @@
 # Lo escribe `./pj onboard` (entrevista); se puede editar a mano y correr `./pj`.
 # hecho vacío = onboarding sin hacer. Esquema: schema/onboarding.schema.json de pj-template.
 version: 1
-hecho: ""
-mision: ""
-no_tocar: []
-reglas_proyecto: []
-primeros_pasos: []
+hecho: "2026-11-18"
+mision: "Plugin de Neovim compañero de git-setup: lanza una mini terminal flotante donde corre el comando de git-setup (el pull) y muestra una notificación con el resultado."
+no_tocar:
+  - "2KAbhishek/octohub.nvim (repos/octohub.nvim): referencia externa de solo lectura; nunca hacer push a upstream ni abrir PRs"
+reglas_proyecto:
+  - "El código del plugin vive en pj-domina-rf-git-setup.nvim; la mini terminal lanza el comando git-pull de la CLI git-setup (pj-domina-rf-git-setup), cuyo empaquetado Arch vive en pj-domina-rf-git-setup-arch"
+  - "rvim es la configuración de Neovim de Roberto donde se integra y prueba el plugin"
+  - "octohub.nvim es solo referencia de lectura para patrones y estructura de plugins de Neovim"
+primeros_pasos:
+  - "leer README.md y AGENTS.md de este meta-repo y de los repos del proyecto"
+  - "revisar los issues abiertos de cada repo (gh issue list) y proponer por cuál empezar"
 wk:
-  como_probar: []
+  como_probar:
+    - "en el meta-repo: ./pj check da «todo bien»"
+    - "cada criterio de aceptación con su prueba corrida de verdad en esta máquina y la salida o captura en el PR"
 rv:
-  exige: []
+  exige:
+    - "que lo de «cómo prueba el WK» esté corrido de verdad en el PR; si no, BLOQUEO"
