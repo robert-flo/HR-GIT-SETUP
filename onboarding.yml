@@ -1,0 +1,13 @@
+# Onboarding del trío de git-setup.nvim: lo propio del proyecto que reciben PM, WK y RV en su ficha.
+# Lo escribe `./pj onboard` (entrevista); se puede editar a mano y correr `./pj`.
+# hecho vacío = onboarding sin hacer. Esquema: schema/onboarding.schema.json de pj-template.
+version: 1
+hecho: ""
+mision: ""
+no_tocar: []
+reglas_proyecto: []
+primeros_pasos: []
+wk:
+  como_probar: []
+rv:
+  exige: []

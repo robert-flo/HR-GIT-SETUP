@@ -1,0 +1,29 @@
+# Clones de repos hijos (los maneja clone-repos.sh)
+/rf-*/
+/fo-*/
+
+# Worktrees locales
+.wt-*/
+*-wt-*/
+*-worktree*/
+
+# Temporales y logs
+*.tmp
+*.bak
+*.bak-*
+*.log
+conversacion-*.md
+scratch-*.md
+.system_generated/
+.DS_Store
+*~
+__pycache__/
+
+# >>> git-setup.nvim: repos (generado) >>>
+/.pj-sync/
+/.pj/
+/.agents/
+/.cursor/
+/.bares/
+/repos/
+# <<< git-setup.nvim: repos (generado) <<<

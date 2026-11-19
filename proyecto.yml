@@ -1,0 +1,16 @@
+# Datos del proyecto. Es el único archivo de datos que llenás a mano; después: ./pj
+# Lo valida schema/proyecto.schema.json de pj-template. Los textos van entre comillas (un # sin comillas corta el valor).
+proyecto: "git-setup.nvim"     # nombre del trío: PM-git-setup.nvim, WK-git-setup.nvim, RV-git-setup.nvim
+area: "plugin de Neovim compañero de git-setup: mini terminal flotante con git pull y notificación"
+rama_base: "main"              # rama de los PR finales
+template_ref: "0735a3cbfa1740dee8fec42fa5ed3dd53a41af7e"   # SHA de robert-flo/pj-template; lo sube el PR de sync
+# Repos hijos (vacío en proyectos de un solo repo). dir = carpeta local, ignorada en .gitignore.
+repos: []
+# Specs en curso: ref = dueño/repo#N, orden entero, exactamente uno con primero: true.
+specs: []
+notas: |
+  Proyecto de un solo repo: el código del plugin vive acá. La mini terminal lanza el comando
+  git-pull de la CLI git-setup (pj-domina-rf-git-setup); el empaquetado Arch de esa CLI vive en
+  pj-domina-rf-git-setup-arch y queda fuera de este trío.
+# Skills extra por rol, además de plantillas/roles.yml de pj-template.
+skills_extra: {}
