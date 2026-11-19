@@ -5,12 +5,34 @@ area: "plugin de Neovim compañero de git-setup: mini terminal flotante con git 
 rama_base: "main"              # rama de los PR finales
 template_ref: "928f2f8bd66030dea8f6f419daec68c8a04ecfbb"   # SHA de robert-flo/pj-template; lo sube el PR de sync
 # Repos hijos (vacío en proyectos de un solo repo). dir = carpeta local, ignorada en .gitignore.
-repos: []
+repos:
+  - dir: "pj-domina-rf-git-setup"
+    repo: "robert-flo/pj-domina-rf-git-setup"
+    rama: "master"
+    nota: "CLI git-setup"
+  - dir: "rvim"
+    repo: "robert-flo/rvim"
+    rama: "main"
+    nota: "Configuración de Neovim de Roberto"
+  - dir: "pj-domina-rf-git-setup-arch"
+    repo: "robert-flo/pj-domina-rf-git-setup-arch"
+    rama: "master"
+    nota: "Empaquetado Arch de la CLI git-setup"
+  - dir: "pj-domina-rf-git-setup.nvim"
+    repo: "robert-flo/pj-domina-rf-git-setup.nvim"
+    rama: "master"
+    nota: "Plugin de Neovim compañero de git-setup"
+  - dir: "octohub.nvim"
+    repo: "2KAbhishek/octohub.nvim"
+    rama: "main"
+    nota: "Referencia externa de solo lectura (sin push a upstream ni PRs)"
 # Specs en curso: ref = dueño/repo#N, orden entero, exactamente uno con primero: true.
 specs: []
 notas: |
-  Proyecto de un solo repo: el código del plugin vive acá. La mini terminal lanza el comando
-  git-pull de la CLI git-setup (pj-domina-rf-git-setup); el empaquetado Arch de esa CLI vive en
-  pj-domina-rf-git-setup-arch y queda fuera de este trío.
+  Meta-repo del proyecto git-setup.nvim. El código del plugin vive en
+  pj-domina-rf-git-setup.nvim; la mini terminal lanza el comando git-pull de la CLI git-setup
+  (pj-domina-rf-git-setup), cuyo empaquetado Arch vive en pj-domina-rf-git-setup-arch. rvim es
+  la configuración de Neovim de Roberto. 2KAbhishek/octohub.nvim es una referencia externa de
+  solo lectura: nunca hacer push a upstream ni abrir PRs.
 # Skills extra por rol, además de plantillas/roles.yml de pj-template.
 skills_extra: {}
