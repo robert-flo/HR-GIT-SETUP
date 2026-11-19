@@ -1,6 +1,6 @@
-# AGENTS.md — git-setup.nvim
+# AGENTS.md — HR-GIT-SETUP
 
-Meta-repo del trío PM/WK/RV de **git-setup.nvim** para Cursor y agy (el código del plugin vive en `pj-domina-rf-git-setup.nvim`). Si sos un agente: si no existe `.agents/reglas/`, corré `./pj` antes de nada.
+Meta-repo **HR-GIT-SETUP** del trío PM/WK/RV para el plugin **git-setup.nvim** en Cursor y agy (el código del plugin vive en `pj-domina-rf-git-setup.nvim`). Si sos un agente: si no existe `.agents/reglas/`, corré `./pj` antes de nada.
 
 ## Qué hay acá
 - `proyecto.yml`: los datos del proyecto (repos, specs en orden, notas). Lo llenás vos.

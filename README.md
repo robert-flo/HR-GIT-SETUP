@@ -1,6 +1,6 @@
-# git-setup.nvim
+# HR-GIT-SETUP
 
-Plugin de Neovim compañero de [git-setup](https://github.com/robert-flo/pj-domina-rf-git-setup): lanza una mini terminal flotante donde corre el comando de git-setup (el pull) y muestra una notificación con el resultado.
+Meta-repo del plugin de Neovim **git-setup.nvim**, compañero de [git-setup](https://github.com/robert-flo/pj-domina-rf-git-setup): lanza una mini terminal flotante donde corre el comando de git-setup (el pull) y muestra una notificación con el resultado.
 
 Estado: arranque. El repo trae solo el andamiaje del trío; el código del plugin viene después.
 
