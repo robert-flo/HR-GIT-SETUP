@@ -82,13 +82,39 @@ repos:
     repo: "robert-flo/ravn-webapps-arch"
     rama: "master"
     nota: "Empaquetado Arch y release automation para ravn-webapps"
+  - dir: "scratchpad"
+    repo: "robert-flo/scratchpad"
+    rama: "main"
+    nota: "Documentación canónica de arquitectura, runbooks y design logs del fork personal de Omarchy"
+  - dir: "omarchy-personal-archive-2026-09"
+    repo: "robert-flo/omarchy-personal-archive-2026-09"
+    rama: "personal"
+    nota: "Archivo histórico del fork personal de Omarchy y quattro (previo a sept 2026)"
+  - dir: "omarchy-pkgs"
+    repo: "robert-flo/omarchy-pkgs"
+    rama: "personal"
+    nota: "Paquetes del fork personal de Omarchy (-arch / -aur)"
+  - dir: "omarchy"
+    repo: "robert-flo/omarchy"
+    rama: "personal"
+    nota: "Fork personal de Omarchy"
+  - dir: "pj-omarchy"
+    repo: "robert-flo/pj-omarchy"
+    rama: "main"
+    nota: "Meta-repositorio y orquestador del workspace pj-omarchy"
+  - dir: "omarchy-personal-repo"
+    repo: "robert-flo/omarchy-personal-repo"
+    rama: "main"
+    nota: "Repositorio personal de pacman alojado en GitHub Pages"
 # Specs en curso: ref = dueño/repo#N, orden entero, exactamente uno con primero: true.
 specs: []
 notas: |
   Meta-repo HR-GIT-SETUP para gestionar y estandarizar las herramientas públicas de Roberto
   empaquetadas para Arch (nombres, CI y estrategias de publicación entre todos los dúos fuente
-  + *-arch), incluyendo el ecosistema de git-setup y git-setup.nvim. El código del plugin vive
-  en pj-domina-rf-git-setup.nvim; la mini terminal lanza el comando git-pull de la CLI git-setup
+  + *-arch), incluyendo el ecosistema de git-setup y git-setup.nvim. También integra los repos
+  de infraestructura y estrategia de publicación de paquetes -arch / -aur y el repositorio
+  personal de pacman (Omarchy y omarchy-personal-repo). El código del plugin vive en
+  pj-domina-rf-git-setup.nvim; la mini terminal lanza el comando git-pull de la CLI git-setup
   (pj-domina-rf-git-setup), cuyo empaquetado Arch vive en pj-domina-rf-git-setup-arch. rvim es
   la configuración de Neovim de Roberto. 2KAbhishek/octohub.nvim es una referencia externa de
   solo lectura: nunca hacer push a upstream ni abrir PRs.
