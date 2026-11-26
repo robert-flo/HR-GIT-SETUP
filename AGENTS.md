@@ -8,7 +8,7 @@ Meta-repo **HR-GIT-SETUP** del trío PM/WK/RV en Cursor y agy para gestionar y e
 - Todo lo demás (reglas, plantillas, skills, scripts) lo trae `./pj` desde `robert-flo/pj-template` al SHA de `template_ref`, en `.pj/`, y genera `.agents/` y `.cursor/`. Nada de eso se versiona ni se edita a mano.
 
 ## Arquitectura
-Proyecto multi-repo compuesto por 19 repositorios:
+Proyecto multi-repo compuesto por 25 repositorios:
 
 ### Dúos de herramientas públicas empaquetadas para Arch (`fuente` + `*-arch`)
 1. `pj-domina-rf-git-setup` + `pj-domina-rf-git-setup-arch`: CLI `git-setup` y su empaquetado Arch.
@@ -19,6 +19,14 @@ Proyecto multi-repo compuesto por 19 repositorios:
 6. `ravn-home-common` + `ravn-home-common-arch`: capa común de `$HOME` para la workstation ravn y su PKGBUILD Arch Linux.
 7. `ravn-home-niri` + `ravn-home-niri-arch`: capa `niri` para la workstation ravn y su PKGBUILD/empaquetado Arch Linux.
 8. `ravn-webapps` + `ravn-webapps-arch`: launchers `.desktop`, íconos y runtime para webapps en RaVN y su empaquetado Arch / release automation.
+
+### Infraestructura y estrategia de publicación (`-arch` / `-aur` y Omarchy)
+- `scratchpad`: documentación canónica de arquitectura, runbooks y design logs del fork personal de Omarchy.
+- `omarchy-personal-archive-2026-09`: archivo histórico del fork personal de Omarchy y quattro (previo a sept 2026).
+- `omarchy-pkgs`: paquetes del fork personal de Omarchy (`-arch` / `-aur`).
+- `omarchy`: fork personal de Omarchy.
+- `pj-omarchy`: meta-repositorio y orquestador del workspace `pj-omarchy`.
+- `omarchy-personal-repo`: repositorio personal de pacman alojado en GitHub Pages.
 
 ### Ecosistema Neovim y referencia
 - `pj-domina-rf-git-setup.nvim`: código del plugin de Neovim (ventana flotante `nvim_open_win` con buffer de terminal `termopen` que corre el `git-pull` de la CLI `git-setup` y muestra una notificación según el código de salida: verde si salió bien, roja si no, dejando la ventana abierta para leer el error).
