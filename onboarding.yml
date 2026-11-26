@@ -3,10 +3,11 @@
 # hecho vacío = onboarding sin hacer. Esquema: schema/onboarding.schema.json de pj-template.
 version: 1
 hecho: "2026-11-18"
-mision: "Plugin de Neovim compañero de git-setup: lanza una mini terminal flotante donde corre el comando de git-setup (el pull) y muestra una notificación con el resultado."
+mision: "Gestionar y estandarizar todas las herramientas públicas de Roberto empaquetadas para Arch (nombres, CI y estrategias de publicación en sus dúos fuente + *-arch), incluyendo el ecosistema de git-setup y su plugin de Neovim git-setup.nvim."
 no_tocar:
   - "2KAbhishek/octohub.nvim (repos/octohub.nvim): referencia externa de solo lectura; nunca hacer push a upstream ni abrir PRs"
 reglas_proyecto:
+  - "Cada herramienta pública empaquetada para Arch se gestiona como un dúo (repositorio fuente + repositorio *-arch) con convenciones consistentes de nombres, CI y publicación"
   - "El código del plugin vive en pj-domina-rf-git-setup.nvim; la mini terminal lanza el comando git-pull de la CLI git-setup (pj-domina-rf-git-setup), cuyo empaquetado Arch vive en pj-domina-rf-git-setup-arch"
   - "rvim es la configuración de Neovim de Roberto donde se integra y prueba el plugin"
   - "octohub.nvim es solo referencia de lectura para patrones y estructura de plugins de Neovim"

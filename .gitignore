@@ -31,4 +31,18 @@ __pycache__/
 /pj-domina-rf-git-setup-arch/
 /pj-domina-rf-git-setup.nvim/
 /octohub.nvim/
+/pj-domina-rf-shared_dir/
+/pj-domina-rf-shared_dir-arch/
+/ravn-git-bare-clone/
+/ravn-git-bare-clone-arch/
+/ravn-sessionizer/
+/ravn-sessionizer-arch/
+/ravn-trio/
+/ravn-trio-arch/
+/ravn-home-common/
+/ravn-home-common-arch/
+/ravn-home-niri/
+/ravn-home-niri-arch/
+/ravn-webapps/
+/ravn-webapps-arch/
 # <<< HR-GIT-SETUP: repos (generado) <<<

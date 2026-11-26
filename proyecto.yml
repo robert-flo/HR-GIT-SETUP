@@ -1,7 +1,7 @@
 # Datos del proyecto. Es el único archivo de datos que llenás a mano; después: ./pj
 # Lo valida schema/proyecto.schema.json de pj-template. Los textos van entre comillas (un # sin comillas corta el valor).
 proyecto: "HR-GIT-SETUP"       # nombre del trío: PM-HR-GIT-SETUP, WK-HR-GIT-SETUP, RV-HR-GIT-SETUP
-area: "plugin de Neovim compañero de git-setup: mini terminal flotante con git pull y notificación"
+area: "gestión y estandarización de las herramientas públicas de Roberto empaquetadas para Arch (nombres, CI y publicación), incluyendo git-setup y git-setup.nvim"
 rama_base: "main"              # rama de los PR finales
 template_ref: "add0cfd9cc85f1f067e057792d4b588d2d26c0fd"   # SHA de robert-flo/pj-template; lo sube el PR de sync
 # Repos hijos (vacío en proyectos de un solo repo). dir = carpeta local, ignorada en .gitignore.
@@ -26,11 +26,69 @@ repos:
     repo: "2KAbhishek/octohub.nvim"
     rama: "main"
     nota: "Referencia externa de solo lectura (sin push a upstream ni PRs)"
+  - dir: "pj-domina-rf-shared_dir"
+    repo: "robert-flo/pj-domina-rf-shared_dir"
+    rama: "master"
+    nota: "Herramienta compartida shared_dir"
+  - dir: "pj-domina-rf-shared_dir-arch"
+    repo: "robert-flo/pj-domina-rf-shared_dir-arch"
+    rama: "master"
+    nota: "Empaquetado Arch de shared_dir"
+  - dir: "ravn-git-bare-clone"
+    repo: "robert-flo/ravn-git-bare-clone"
+    rama: "main"
+    nota: "Launcher y runtime modular de ravn-git-bare-clone"
+  - dir: "ravn-git-bare-clone-arch"
+    repo: "robert-flo/ravn-git-bare-clone-arch"
+    rama: "main"
+    nota: "Paquete Arch Linux para ravn-git-bare-clone"
+  - dir: "ravn-sessionizer"
+    repo: "robert-flo/ravn-sessionizer"
+    rama: "main"
+    nota: "Sessionizer para herdr"
+  - dir: "ravn-sessionizer-arch"
+    repo: "robert-flo/ravn-sessionizer-arch"
+    rama: "main"
+    nota: "Paquete Arch de ravn-sessionizer"
+  - dir: "ravn-trio"
+    repo: "robert-flo/ravn-trio"
+    rama: "main"
+    nota: "Trío PM/WK/RV local en herdr (pj-trio)"
+  - dir: "ravn-trio-arch"
+    repo: "robert-flo/ravn-trio-arch"
+    rama: "main"
+    nota: "Paquete Arch de ravn-trio"
+  - dir: "ravn-home-common"
+    repo: "robert-flo/ravn-home-common"
+    rama: "main"
+    nota: "Capa común de $HOME para la workstation ravn"
+  - dir: "ravn-home-common-arch"
+    repo: "robert-flo/ravn-home-common-arch"
+    rama: "main"
+    nota: "PKGBUILD Arch Linux para ravn-home-common"
+  - dir: "ravn-home-niri"
+    repo: "robert-flo/ravn-home-niri"
+    rama: "main"
+    nota: "Capa niri para la workstation ravn"
+  - dir: "ravn-home-niri-arch"
+    repo: "robert-flo/ravn-home-niri-arch"
+    rama: "main"
+    nota: "PKGBUILD y empaquetado Arch Linux para ravn-home-niri"
+  - dir: "ravn-webapps"
+    repo: "robert-flo/ravn-webapps"
+    rama: "master"
+    nota: "Launchers .desktop, íconos y runtime para webapps en RaVN"
+  - dir: "ravn-webapps-arch"
+    repo: "robert-flo/ravn-webapps-arch"
+    rama: "master"
+    nota: "Empaquetado Arch y release automation para ravn-webapps"
 # Specs en curso: ref = dueño/repo#N, orden entero, exactamente uno con primero: true.
 specs: []
 notas: |
-  Meta-repo HR-GIT-SETUP del proyecto git-setup.nvim. El código del plugin vive en
-  pj-domina-rf-git-setup.nvim; la mini terminal lanza el comando git-pull de la CLI git-setup
+  Meta-repo HR-GIT-SETUP para gestionar y estandarizar las herramientas públicas de Roberto
+  empaquetadas para Arch (nombres, CI y estrategias de publicación entre todos los dúos fuente
+  + *-arch), incluyendo el ecosistema de git-setup y git-setup.nvim. El código del plugin vive
+  en pj-domina-rf-git-setup.nvim; la mini terminal lanza el comando git-pull de la CLI git-setup
   (pj-domina-rf-git-setup), cuyo empaquetado Arch vive en pj-domina-rf-git-setup-arch. rvim es
   la configuración de Neovim de Roberto. 2KAbhishek/octohub.nvim es una referencia externa de
   solo lectura: nunca hacer push a upstream ni abrir PRs.
